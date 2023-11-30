@@ -1,3 +1,22 @@
+# 2023-11-19 20:30
+- [fix(radarr): Add CtrlHD to Atmos condition in TrueHD Atmos Radarr Custom Format](https://github.com/TRaSH-Guides/Guides/pull/1651)
+
+# 2023-11-19 16:00
+- [feat(guide): include the different hdr formats in the quality profiles](https://github.com/TRaSH-Guides/Guides/pull/1623)
+- [fix(guide): Update Radarr/Sonarr guide How to rename your folders](https://github.com/TRaSH-Guides/Guides/pull/1647)
+- [fix(starr): add several groups to LQ](https://github.com/TRaSH-Guides/Guides/pull/1644)
+- [fix(starr): Custom Format Conditional Changes](https://github.com/TRaSH-Guides/Guides/pull/1643)
+- [update(deluge-mover): update mover script guide for changes](https://github.com/TRaSH-Guides/Guides/pull/1646)
+
+# 2023-11-15 16:15
+- [feat(guides): Add Honeywell qBittorrent Theme to Themes Page](https://github.com/TRaSH-Guides/Guides/pull/1633)
+- [feat(guides): Added new guide for deluge-mover script](https://github.com/TRaSH-Guides/Guides/pull/1638)
+- [feat(guides/starr): Created New Custom Formats for 4OD and ALL4 Streaming Services, and LQ (Release Title)](https://github.com/TRaSH-Guides/Guides/pull/1639)
+- [feat(radarr): Added .VAV to the Retags Custom Format](https://github.com/TRaSH-Guides/Guides/pull/1635)
+- [feat(starr): add SbR to WEB Tier 02](https://github.com/TRaSH-Guides/Guides/pull/1637)
+- [feat(starr): Create SDR (no WEBDL) custom formats](https://github.com/TRaSH-Guides/Guides/pull/1618)
+- [fix(radarr): SQP-1 (2160p) several updates (v2)](https://github.com/TRaSH-Guides/Guides/pull/1630)
+
 # 2023-10-27 20:45
 - [fix(french-starr): remove non-French Language conditions in the French Audio CF](https://github.com/TRaSH-Guides/Guides/pull/1611)
 
