@@ -15,14 +15,14 @@
         <link rel="canonical" href="https://trash-guides.info/Sonarr/Sonarr-Release-Profile-RegEx/">
       
       
-        <link rel="prev" href="../Sonarr-recommended-naming-scheme/">
+        <link rel="prev" href="../Sonarr-remote-path-mapping/">
       
       
         <link rel="next" href="../Sonarr-Release-Profile-RegEx-Anime/">
       
       
       <link rel="icon" href="../../img/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -30,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4b4a2bd9.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -97,9 +97,6 @@
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue">
   
     
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -152,9 +149,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
       </label>
     
@@ -162,15 +159,18 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
       </label>
     
   
 </form>
       
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -216,7 +216,7 @@
         <a href="https://github.com/TRaSH-Guides/Guides" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     TRaSH-Guides
@@ -470,7 +470,7 @@
       <a href="https://github.com/TRaSH-Guides/Guides" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     TRaSH-Guides
@@ -482,6 +482,7 @@
     
       
       
+  
   
   
   
@@ -501,6 +502,7 @@
     
       
       
+  
   
   
   
@@ -543,6 +545,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Radarr/" class="md-nav__link">
         
@@ -560,6 +563,7 @@
             
               
                 
+  
   
   
   
@@ -583,6 +587,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Radarr/Radarr-recommended-naming-scheme/" class="md-nav__link">
         
@@ -600,6 +605,7 @@
             
               
                 
+  
   
   
   
@@ -623,6 +629,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Radarr/Radarr-how-to-update-custom-formats/" class="md-nav__link">
         
@@ -640,6 +647,7 @@
             
               
                 
+  
   
   
   
@@ -663,6 +671,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Radarr/radarr-setup-quality-profiles-anime/" class="md-nav__link">
         
@@ -680,6 +689,7 @@
             
               
                 
+  
   
   
   
@@ -703,6 +713,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Radarr/Radarr-collection-of-custom-formats/" class="md-nav__link">
         
@@ -723,6 +734,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Radarr/Radarr-remote-path-mapping/" class="md-nav__link">
         
@@ -740,6 +752,7 @@
             
               
                 
+  
   
   
   
@@ -779,6 +792,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Radarr/Tips/How-to-setup-language-custom-formats/" class="md-nav__link">
         
@@ -796,6 +810,7 @@
             
               
                 
+  
   
   
   
@@ -819,6 +834,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Radarr/Tips/Radarr-rename-your-folders/" class="md-nav__link">
         
@@ -839,6 +855,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Radarr/Tips/Radarr-show-unknown-movie-items/" class="md-nav__link">
         
@@ -856,6 +873,7 @@
             
               
                 
+  
   
   
   
@@ -894,6 +912,7 @@
   
   
     
+  
   
   
     
@@ -935,6 +954,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
         
@@ -952,6 +972,7 @@
             
               
                 
+  
   
   
   
@@ -975,6 +996,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Sonarr-recommended-naming-scheme/" class="md-nav__link">
         
@@ -994,7 +1016,194 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../sonarr-import-custom-formats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to import Custom Formats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sonarr-how-to-update-custom-formats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Update Custom Formats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sonarr-setup-quality-profiles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to setup Quality Profiles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sonarr-setup-quality-profiles-anime/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to setup Quality Profiles (Anime)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sonarr-setup-quality-profiles-french-en/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to setup Quality Profiles (French)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sonarr-collection-of-custom-formats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collection of Custom Formats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sonarr-remote-path-mapping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remote Path Mappings explained
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sonarr v3 (Legacy)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            Sonarr v3 (Legacy)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
   
   
     <li class="md-nav__item md-nav__item--active">
@@ -1043,14 +1252,18 @@
       
         <li class="md-nav__item">
   <a href="#faq" class="md-nav__link">
-    FAQ
+    <span class="md-ellipsis">
+      FAQ
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#basics" class="md-nav__link">
-    Basics
+    <span class="md-ellipsis">
+      Basics
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Basics">
@@ -1058,7 +1271,9 @@
         
           <li class="md-nav__item">
   <a href="#sonarr-current-logic" class="md-nav__link">
-    Sonarr current logic
+    <span class="md-ellipsis">
+      Sonarr current logic
+    </span>
   </a>
   
 </li>
@@ -1070,14 +1285,18 @@
       
         <li class="md-nav__item">
   <a href="#propers-and-repacks" class="md-nav__link">
-    Propers and Repacks
+    <span class="md-ellipsis">
+      Propers and Repacks
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#profile-1" class="md-nav__link">
-    Profile 1
+    <span class="md-ellipsis">
+      Profile 1
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Profile 1">
@@ -1085,7 +1304,9 @@
         
           <li class="md-nav__item">
   <a href="#release-sources-streaming-service" class="md-nav__link">
-    Release Sources (Streaming Service)
+    <span class="md-ellipsis">
+      Release Sources (Streaming Service)
+    </span>
   </a>
   
 </li>
@@ -1097,7 +1318,9 @@
       
         <li class="md-nav__item">
   <a href="#profile-2" class="md-nav__link">
-    Profile 2
+    <span class="md-ellipsis">
+      Profile 2
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Profile 2">
@@ -1105,7 +1328,9 @@
         
           <li class="md-nav__item">
   <a href="#p2p-groups-repackproper" class="md-nav__link">
-    P2P Groups + Repack/Proper
+    <span class="md-ellipsis">
+      P2P Groups + Repack/Proper
+    </span>
   </a>
   
 </li>
@@ -1117,7 +1342,9 @@
       
         <li class="md-nav__item">
   <a href="#profile-3" class="md-nav__link">
-    Profile 3
+    <span class="md-ellipsis">
+      Profile 3
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Profile 3">
@@ -1125,7 +1352,9 @@
         
           <li class="md-nav__item">
   <a href="#low-quality-groups" class="md-nav__link">
-    Low Quality Groups
+    <span class="md-ellipsis">
+      Low Quality Groups
+    </span>
   </a>
   
 </li>
@@ -1137,7 +1366,9 @@
       
         <li class="md-nav__item">
   <a href="#profile-4" class="md-nav__link">
-    Profile 4
+    <span class="md-ellipsis">
+      Profile 4
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Profile 4">
@@ -1145,7 +1376,9 @@
         
           <li class="md-nav__item">
   <a href="#optionals" class="md-nav__link">
-    Optionals
+    <span class="md-ellipsis">
+      Optionals
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Optionals">
@@ -1153,63 +1386,81 @@
         
           <li class="md-nav__item">
   <a href="#golden-rule" class="md-nav__link">
-    Golden rule
+    <span class="md-ellipsis">
+      Golden rule
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-prefer-hdr" class="md-nav__link">
-    Optional - Prefer HDR
+    <span class="md-ellipsis">
+      Optional - Prefer HDR
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-prefer-dolby-vision" class="md-nav__link">
-    Optional - Prefer Dolby Vision
+    <span class="md-ellipsis">
+      Optional - Prefer Dolby Vision
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-dislike-retags" class="md-nav__link">
-    Optional - Dislike retags
+    <span class="md-ellipsis">
+      Optional - Dislike retags
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-dislike-obfuscated" class="md-nav__link">
-    Optional - Dislike Obfuscated
+    <span class="md-ellipsis">
+      Optional - Dislike Obfuscated
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-dislike-release-ending-en" class="md-nav__link">
-    Optional - Dislike release ending: en
+    <span class="md-ellipsis">
+      Optional - Dislike release ending: en
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-dislike-release-containing-1-" class="md-nav__link">
-    Optional - Dislike release containing: 1-
+    <span class="md-ellipsis">
+      Optional - Dislike release containing: 1-
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-dislike-extras" class="md-nav__link">
-    Optional - Dislike Extras
+    <span class="md-ellipsis">
+      Optional - Dislike Extras
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-prefer-season-packs" class="md-nav__link">
-    Optional - Prefer Season Packs
+    <span class="md-ellipsis">
+      Optional - Prefer Season Packs
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Optional - Prefer Season Packs">
@@ -1217,7 +1468,9 @@
         
           <li class="md-nav__item">
   <a href="#su-season-pack-issue" class="md-nav__link">
-    .su season pack issue
+    <span class="md-ellipsis">
+      .su season pack issue
+    </span>
   </a>
   
 </li>
@@ -1229,35 +1482,45 @@
         
           <li class="md-nav__item">
   <a href="#optional-ignore-dolby-vision-without-hdr10-fallback" class="md-nav__link">
-    Optional - Ignore Dolby Vision without HDR10 fallback
+    <span class="md-ellipsis">
+      Optional - Ignore Dolby Vision without HDR10 fallback
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-ignore-the-group-scene" class="md-nav__link">
-    Optional - Ignore The Group -SCENE
+    <span class="md-ellipsis">
+      Optional - Ignore The Group -SCENE
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-ignore-scene-releases" class="md-nav__link">
-    Optional - Ignore scene releases
+    <span class="md-ellipsis">
+      Optional - Ignore scene releases
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-ignore-bad-dual-audio-groups" class="md-nav__link">
-    Optional - Ignore Bad Dual Audio Groups
+    <span class="md-ellipsis">
+      Optional - Ignore Bad Dual Audio Groups
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-ignore-av1" class="md-nav__link">
-    Optional - Ignore AV1
+    <span class="md-ellipsis">
+      Optional - Ignore AV1
+    </span>
   </a>
   
 </li>
@@ -1269,7 +1532,9 @@
         
           <li class="md-nav__item">
   <a href="#a-little-explanation-of-the-scores-and-why" class="md-nav__link">
-    A little explanation of the scores and why
+    <span class="md-ellipsis">
+      A little explanation of the scores and why
+    </span>
   </a>
   
 </li>
@@ -1281,7 +1546,9 @@
       
         <li class="md-nav__item">
   <a href="#final-results" class="md-nav__link">
-    Final Results
+    <span class="md-ellipsis">
+      Final Results
+    </span>
   </a>
   
 </li>
@@ -1300,188 +1567,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Sonarr-Release-Profile-RegEx-Anime/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Release Profile RegEx (Anime)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Sonarr-remote-path-mapping/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Remote Path Mappings explained
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Sonarr v4 Beta
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_7">
-            <span class="md-nav__icon md-icon"></span>
-            Sonarr v4 Beta
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sonarr-import-custom-formats/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to import Custom Formats
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sonarr-how-to-update-custom-formats/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to Update Custom Formats
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sonarr-setup-quality-profiles/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to setup Quality Profiles
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sonarr-setup-quality-profiles-anime/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sonarr-setup-quality-profiles-french-en/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sonarr-collection-of-custom-formats/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Collection of Custom Formats
   </span>
   
 
@@ -1504,6 +1596,7 @@
   
   
   
+  
     
     
     
@@ -1514,10 +1607,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
         
           
-          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1528,8 +1621,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
             <span class="md-nav__icon md-icon"></span>
             Tips
           </label>
@@ -1537,6 +1630,7 @@
             
               
                 
+  
   
   
   
@@ -1560,6 +1654,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Tips/Merge-quality/" class="md-nav__link">
         
@@ -1577,6 +1672,7 @@
             
               
                 
+  
   
   
   
@@ -1612,6 +1708,7 @@
     
       
       
+  
   
   
   
@@ -1654,6 +1751,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Prowlarr/" class="md-nav__link">
         
@@ -1671,6 +1769,7 @@
             
               
                 
+  
   
   
   
@@ -1694,6 +1793,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Prowlarr/prowlarr-setup-flaresolverr/" class="md-nav__link">
         
@@ -1711,6 +1811,7 @@
             
               
                 
+  
   
   
   
@@ -1738,6 +1839,7 @@
     
       
       
+  
   
   
   
@@ -1780,6 +1882,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Bazarr/" class="md-nav__link">
         
@@ -1797,6 +1900,7 @@
             
               
                 
+  
   
   
   
@@ -1820,6 +1924,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Bazarr/After-install-configuration/" class="md-nav__link">
         
@@ -1840,6 +1945,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="/Bazarr/scripts/" class="md-nav__link">
         
@@ -1857,6 +1963,7 @@
             
               
                 
+  
   
   
   
@@ -1896,6 +2003,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Bazarr/Tips/Bazarr-suggested-scoring/" class="md-nav__link">
         
@@ -1928,6 +2036,7 @@
     
       
       
+  
   
   
   
@@ -1970,6 +2079,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Downloaders/" class="md-nav__link">
         
@@ -1987,6 +2097,7 @@
             
               
                 
+  
   
   
   
@@ -2026,6 +2137,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Downloaders/NZBGet/Basic-Setup/" class="md-nav__link">
         
@@ -2046,6 +2158,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Downloaders/NZBGet/Paths-and-Categories/" class="md-nav__link">
         
@@ -2063,6 +2176,7 @@
             
               
                 
+  
   
   
   
@@ -2091,6 +2205,7 @@
             
               
                 
+  
   
   
   
@@ -2130,6 +2245,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Downloaders/SABnzbd/Basic-Setup/" class="md-nav__link">
         
@@ -2150,6 +2266,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Downloaders/SABnzbd/Paths-and-Categories/" class="md-nav__link">
         
@@ -2167,6 +2284,7 @@
             
               
                 
+  
   
   
   
@@ -2195,6 +2313,7 @@
             
               
                 
+  
   
   
   
@@ -2234,6 +2353,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Downloaders/qBittorrent/Basic-Setup/" class="md-nav__link">
         
@@ -2251,6 +2371,7 @@
             
               
                 
+  
   
   
   
@@ -2274,6 +2395,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Downloaders/qBittorrent/How-to-add-categories/" class="md-nav__link">
         
@@ -2291,6 +2413,7 @@
             
               
                 
+  
   
   
   
@@ -2314,6 +2437,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Downloaders/qBittorrent/3rd-party-tools/" class="md-nav__link">
         
@@ -2331,6 +2455,7 @@
             
               
                 
+  
   
   
   
@@ -2370,6 +2495,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/" class="md-nav__link">
         
@@ -2387,6 +2513,7 @@
             
               
                 
+  
   
   
   
@@ -2426,6 +2553,7 @@
   
   
   
+  
     
     
     
@@ -2462,6 +2590,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Downloaders/Deluge/" class="md-nav__link">
         
@@ -2479,6 +2608,7 @@
             
               
                 
+  
   
   
   
@@ -2502,6 +2632,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Downloaders/Deluge/Using-Labels/" class="md-nav__link">
         
@@ -2522,6 +2653,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Downloaders/Deluge/Port-Forwarding/" class="md-nav__link">
         
@@ -2539,6 +2671,7 @@
             
               
                 
+  
   
   
   
@@ -2578,6 +2711,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Downloaders/Deluge/Tips/Plugins/" class="md-nav__link">
         
@@ -2598,6 +2732,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Downloaders/Deluge/Tips/Thin-Client/" class="md-nav__link">
         
@@ -2615,6 +2750,7 @@
             
               
                 
+  
   
   
   
@@ -2654,6 +2790,7 @@
   
   
   
+  
     
     
     
@@ -2690,6 +2827,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Downloaders/ruTorrent/" class="md-nav__link">
         
@@ -2707,6 +2845,7 @@
             
               
                 
+  
   
   
   
@@ -2742,6 +2881,7 @@
     
       
       
+  
   
   
   
@@ -2784,6 +2924,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Plex/" class="md-nav__link">
         
@@ -2801,6 +2942,7 @@
             
               
                 
+  
   
   
   
@@ -2840,6 +2982,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Plex/Tips/Plex-media-server/" class="md-nav__link">
         
@@ -2860,6 +3003,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Plex/Tips/Optimal-plex-client-settings/" class="md-nav__link">
         
@@ -2877,6 +3021,7 @@
             
               
                 
+  
   
   
   
@@ -2908,6 +3053,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="/Plex/profiles/" class="md-nav__link">
         
@@ -2932,6 +3078,7 @@
     
       
       
+  
   
   
   
@@ -2974,6 +3121,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Guide-Sync/" class="md-nav__link">
         
@@ -2998,6 +3146,7 @@
     
       
       
+  
   
   
   
@@ -3040,6 +3189,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Misc/" class="md-nav__link">
         
@@ -3057,6 +3207,7 @@
             
               
                 
+  
   
   
   
@@ -3080,6 +3231,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Misc/How-to-setup-Torguard-for-port-forwarding/" class="md-nav__link">
         
@@ -3097,6 +3249,7 @@
             
               
                 
+  
   
   
   
@@ -3124,6 +3277,7 @@
     
       
       
+  
   
   
   
@@ -3166,6 +3320,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Hardlinks/Hardlinks-and-Instant-Moves/" class="md-nav__link">
         
@@ -3183,6 +3338,7 @@
             
               
                 
+  
   
   
   
@@ -3222,6 +3378,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Hardlinks/How-to-setup-for/" class="md-nav__link">
         
@@ -3239,6 +3396,7 @@
             
               
                 
+  
   
   
   
@@ -3262,6 +3420,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Hardlinks/How-to-setup-for/Dockstarter/" class="md-nav__link">
         
@@ -3279,6 +3438,7 @@
             
               
                 
+  
   
   
   
@@ -3302,6 +3462,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Hardlinks/How-to-setup-for/Synology/" class="md-nav__link">
         
@@ -3322,6 +3483,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Hardlinks/How-to-setup-for/TrueNAS-Core/" class="md-nav__link">
         
@@ -3339,6 +3501,7 @@
             
               
                 
+  
   
   
   
@@ -3370,6 +3533,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Hardlinks/Examples/" class="md-nav__link">
         
@@ -3390,6 +3554,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Hardlinks/Check-if-hardlinks-are-working/" class="md-nav__link">
         
@@ -3407,6 +3572,7 @@
             
               
                 
+  
   
   
   
@@ -3434,6 +3600,7 @@
     
       
       
+  
   
   
   
@@ -3479,14 +3646,18 @@
       
         <li class="md-nav__item">
   <a href="#faq" class="md-nav__link">
-    FAQ
+    <span class="md-ellipsis">
+      FAQ
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#basics" class="md-nav__link">
-    Basics
+    <span class="md-ellipsis">
+      Basics
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Basics">
@@ -3494,7 +3665,9 @@
         
           <li class="md-nav__item">
   <a href="#sonarr-current-logic" class="md-nav__link">
-    Sonarr current logic
+    <span class="md-ellipsis">
+      Sonarr current logic
+    </span>
   </a>
   
 </li>
@@ -3506,14 +3679,18 @@
       
         <li class="md-nav__item">
   <a href="#propers-and-repacks" class="md-nav__link">
-    Propers and Repacks
+    <span class="md-ellipsis">
+      Propers and Repacks
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#profile-1" class="md-nav__link">
-    Profile 1
+    <span class="md-ellipsis">
+      Profile 1
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Profile 1">
@@ -3521,7 +3698,9 @@
         
           <li class="md-nav__item">
   <a href="#release-sources-streaming-service" class="md-nav__link">
-    Release Sources (Streaming Service)
+    <span class="md-ellipsis">
+      Release Sources (Streaming Service)
+    </span>
   </a>
   
 </li>
@@ -3533,7 +3712,9 @@
       
         <li class="md-nav__item">
   <a href="#profile-2" class="md-nav__link">
-    Profile 2
+    <span class="md-ellipsis">
+      Profile 2
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Profile 2">
@@ -3541,7 +3722,9 @@
         
           <li class="md-nav__item">
   <a href="#p2p-groups-repackproper" class="md-nav__link">
-    P2P Groups + Repack/Proper
+    <span class="md-ellipsis">
+      P2P Groups + Repack/Proper
+    </span>
   </a>
   
 </li>
@@ -3553,7 +3736,9 @@
       
         <li class="md-nav__item">
   <a href="#profile-3" class="md-nav__link">
-    Profile 3
+    <span class="md-ellipsis">
+      Profile 3
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Profile 3">
@@ -3561,7 +3746,9 @@
         
           <li class="md-nav__item">
   <a href="#low-quality-groups" class="md-nav__link">
-    Low Quality Groups
+    <span class="md-ellipsis">
+      Low Quality Groups
+    </span>
   </a>
   
 </li>
@@ -3573,7 +3760,9 @@
       
         <li class="md-nav__item">
   <a href="#profile-4" class="md-nav__link">
-    Profile 4
+    <span class="md-ellipsis">
+      Profile 4
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Profile 4">
@@ -3581,7 +3770,9 @@
         
           <li class="md-nav__item">
   <a href="#optionals" class="md-nav__link">
-    Optionals
+    <span class="md-ellipsis">
+      Optionals
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Optionals">
@@ -3589,63 +3780,81 @@
         
           <li class="md-nav__item">
   <a href="#golden-rule" class="md-nav__link">
-    Golden rule
+    <span class="md-ellipsis">
+      Golden rule
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-prefer-hdr" class="md-nav__link">
-    Optional - Prefer HDR
+    <span class="md-ellipsis">
+      Optional - Prefer HDR
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-prefer-dolby-vision" class="md-nav__link">
-    Optional - Prefer Dolby Vision
+    <span class="md-ellipsis">
+      Optional - Prefer Dolby Vision
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-dislike-retags" class="md-nav__link">
-    Optional - Dislike retags
+    <span class="md-ellipsis">
+      Optional - Dislike retags
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-dislike-obfuscated" class="md-nav__link">
-    Optional - Dislike Obfuscated
+    <span class="md-ellipsis">
+      Optional - Dislike Obfuscated
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-dislike-release-ending-en" class="md-nav__link">
-    Optional - Dislike release ending: en
+    <span class="md-ellipsis">
+      Optional - Dislike release ending: en
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-dislike-release-containing-1-" class="md-nav__link">
-    Optional - Dislike release containing: 1-
+    <span class="md-ellipsis">
+      Optional - Dislike release containing: 1-
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-dislike-extras" class="md-nav__link">
-    Optional - Dislike Extras
+    <span class="md-ellipsis">
+      Optional - Dislike Extras
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-prefer-season-packs" class="md-nav__link">
-    Optional - Prefer Season Packs
+    <span class="md-ellipsis">
+      Optional - Prefer Season Packs
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Optional - Prefer Season Packs">
@@ -3653,7 +3862,9 @@
         
           <li class="md-nav__item">
   <a href="#su-season-pack-issue" class="md-nav__link">
-    .su season pack issue
+    <span class="md-ellipsis">
+      .su season pack issue
+    </span>
   </a>
   
 </li>
@@ -3665,35 +3876,45 @@
         
           <li class="md-nav__item">
   <a href="#optional-ignore-dolby-vision-without-hdr10-fallback" class="md-nav__link">
-    Optional - Ignore Dolby Vision without HDR10 fallback
+    <span class="md-ellipsis">
+      Optional - Ignore Dolby Vision without HDR10 fallback
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-ignore-the-group-scene" class="md-nav__link">
-    Optional - Ignore The Group -SCENE
+    <span class="md-ellipsis">
+      Optional - Ignore The Group -SCENE
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-ignore-scene-releases" class="md-nav__link">
-    Optional - Ignore scene releases
+    <span class="md-ellipsis">
+      Optional - Ignore scene releases
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-ignore-bad-dual-audio-groups" class="md-nav__link">
-    Optional - Ignore Bad Dual Audio Groups
+    <span class="md-ellipsis">
+      Optional - Ignore Bad Dual Audio Groups
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#optional-ignore-av1" class="md-nav__link">
-    Optional - Ignore AV1
+    <span class="md-ellipsis">
+      Optional - Ignore AV1
+    </span>
   </a>
   
 </li>
@@ -3705,7 +3926,9 @@
         
           <li class="md-nav__item">
   <a href="#a-little-explanation-of-the-scores-and-why" class="md-nav__link">
-    A little explanation of the scores and why
+    <span class="md-ellipsis">
+      A little explanation of the scores and why
+    </span>
   </a>
   
 </li>
@@ -3717,7 +3940,9 @@
       
         <li class="md-nav__item">
   <a href="#final-results" class="md-nav__link">
-    Final Results
+    <span class="md-ellipsis">
+      Final Results
+    </span>
   </a>
   
 </li>
@@ -3753,6 +3978,12 @@
     </a>
   
 
+
+<!-- BEGIN INCLUDE ../../includes/sonarrv3-eol.md -->
+<div class="admonition warning">
+<p class="admonition-title"><strong>Sonarr v3 - End Of Life</strong><br><br>As of December 30th 2023, Sonarr v4 has been officially released.<br>Sonarr v3 is therefore in End of Life status.<br>As v4 has now been released, there will be no further updates to the Sonarr v3 guide.<br>We recommend that all users upgrade to Sonarr v4.<br>This Sonarr v3 guide will be removed in a future guides update.<br><center><br><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> <strong>Before updating to Sonarr v4</strong> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /><br>it is recommended that you delete any existing Release Profiles</center><br></p>
+</div>
+<!-- END INCLUDE -->
 
 <h1 id="release-profile-regex-web-dl">Release Profile RegEx (WEB-DL)<a class="headerlink" href="#release-profile-regex-web-dl" title="Permanent link"></a></h1>
 <p>Sonarr V3 has a great feature called Release Profile.
@@ -3801,7 +4032,7 @@ The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, 
 <details class="abstract">
 <summary>Sonarr current logic - [Click to show/hide]</summary>
 <p>As of 2021-11-06 the logic is as follows:</p>
-<p>The Current logic on how downloads are compared is <strong>Quality Trumps All</strong> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p>The Current logic on how downloads are compared is <strong>Quality Trumps All</strong> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
 <ol>
 <li>Quality</li>
 <li>Language</li>
@@ -3936,7 +4167,7 @@ Probably doesn’t happen if cutoff is met, but for anything that is unmet or an
 </code></pre></div>
 <div class="admonition danger">
 <p class="admonition-title">Caution</p>
-<p>Don't forget to click on <code>SAVE</code> after you've added everything you want to the release profile <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p>Don't forget to click on <code>SAVE</code> after you've added everything you want to the release profile <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <details class="success">
 <summary>example - [Click to show/hide]</summary>
@@ -3957,7 +4188,7 @@ Probably doesn’t happen if cutoff is met, but for anything that is unmet or an
 
 <h3 id="p2p-groups-repackproper">P2P Groups + Repack/Proper<a class="headerlink" href="#p2p-groups-repackproper" title="Permanent link"></a></h3>
 <div class="admonition warning">
-<p class="admonition-title">DO NOT Check mark <code>Include Preferred when Renaming</code> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p class="admonition-title">DO NOT Check mark <code>Include Preferred when Renaming</code> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <p>Add this to your <code>Preferred (3)</code> with a score of [1700]</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>-ABBIE<span class="p">|</span>-AJP69<span class="p">|</span>-APEX<span class="p">|</span>-CasStudio<span class="p">|</span>CRFW<span class="p">|</span>-CtrlHD<span class="p">|</span>-FLUX<span class="p">|</span><span class="se">\b</span>HONE<span class="p">|</span>-KiNGS<span class="p">|</span>-monkee<span class="p">|</span>NOSiViD<span class="p">|</span>-NTb<span class="p">|</span>-NTG<span class="p">|</span>-PAXA<span class="p">|</span>-PEXA<span class="p">|</span>-QOQ<span class="p">|</span>-RTN<span class="p">|</span>-SiC<span class="p">|</span>T6D<span class="p">|</span>-TOMMY<span class="p">|</span>-ViSUM<span class="p">|</span>-XEPA<span class="o">)</span><span class="se">\b</span>/i
@@ -3982,7 +4213,7 @@ Probably doesn’t happen if cutoff is met, but for anything that is unmet or an
 </code></pre></div>
 <div class="admonition danger">
 <p class="admonition-title">Caution</p>
-<p>Don't forget to click on <code>SAVE</code> after you've added everything you want to the release profile <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p>Don't forget to click on <code>SAVE</code> after you've added everything you want to the release profile <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <details class="success">
 <summary>example - [Click to show/hide]</summary>
@@ -4003,14 +4234,14 @@ Probably doesn’t happen if cutoff is met, but for anything that is unmet or an
 
 <h3 id="low-quality-groups">Low Quality Groups<a class="headerlink" href="#low-quality-groups" title="Permanent link"></a></h3>
 <div class="admonition warning">
-<p class="admonition-title">DO NOT Check mark <code>Include Preferred when Renaming</code> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p class="admonition-title">DO NOT Check mark <code>Include Preferred when Renaming</code> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <p>Add this to your <code>Preferred (3)</code> with a score of [-10000]</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>-BRiNK<span class="p">|</span>-CHX<span class="p">|</span>-CTFOH<span class="p">|</span>-d3g<span class="p">|</span>-EVO<span class="p">|</span>-FGT<span class="p">|</span>-GHOSTS<span class="p">|</span>-HiQVE<span class="p">|</span>-iNTENSO<span class="p">|</span>JFF<span class="p">|</span>MeGusta<span class="p">|</span>-NERO<span class="p">|</span>nhanc3<span class="p">|</span>Pahe<span class="se">\.</span>ph<span class="p">|</span>Pahe<span class="se">\.</span><span class="k">in</span><span class="p">|</span>Pahe<span class="p">|</span>PSA<span class="p">|</span>TBS<span class="p">|</span>-TG<span class="p">|</span>-VIDEOHOLE<span class="p">|</span>-worldmkv<span class="p">|</span>-XLF<span class="p">|</span>-Zero00<span class="o">)</span><span class="se">\b</span>/i
 </code></pre></div>
 <div class="admonition danger">
 <p class="admonition-title">Caution</p>
-<p>Don't forget to click on <code>SAVE</code> after you've added everything you want to the release profile <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p>Don't forget to click on <code>SAVE</code> after you've added everything you want to the release profile <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <details class="success">
 <summary>example - [Click to show/hide]</summary>
@@ -4029,17 +4260,17 @@ Probably doesn’t happen if cutoff is met, but for anything that is unmet or an
 <h2 id="profile-4">Profile 4<a class="headerlink" href="#profile-4" title="Permanent link"></a></h2>
 <h3 id="optionals">Optionals<a class="headerlink" href="#optionals" title="Permanent link"></a></h3>
 <div class="admonition warning">
-<p class="admonition-title">DO NOT Check mark <code>Include Preferred when Renaming</code> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p class="admonition-title">DO NOT Check mark <code>Include Preferred when Renaming</code> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <div class="admonition danger">
 <p class="admonition-title">Caution</p>
-<p>These optionals are optional because they should only be added/used if you got a certain use case for it, if you don't understand what the optional is for then you probably don't need it <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /></p>
-<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /> <strong>Except the <code>Golden Rule</code> this one is actually a must even that it's added in the optional section</strong> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p>These optionals are optional because they should only be added/used if you got a certain use case for it, if you don't understand what the optional is for then you probably don't need it <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> <strong>Except the <code>Golden Rule</code> this one is actually a must even that it's added in the optional section</strong> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
 <p>If you see certain optional with a positive score and you actually don't want them just add them with a negative score !!!</p>
 </div>
 <h4 id="golden-rule">Golden rule<a class="headerlink" href="#golden-rule" title="Permanent link"></a></h4>
 <div class="admonition warning">
-<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /> This one is actually a must even that it's added in the optional section <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> This one is actually a must even that it's added in the optional section <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <details class="question">
 <summary>Why the Must Not Contain entry - [Click to show/hide]</summary>
@@ -4182,7 +4413,7 @@ create a new release profile specific for .su that uses the <a href="#optional-m
 <p>If you don't want to download so called scene releases.</p>
 </details>
 <p>Add this to your <code>Must not contain (2)</code></p>
-<div class="highlight"><pre><span></span><code>/^<span class="o">(</span>?!.*<span class="o">(</span>web<span class="o">[</span><span class="w"> </span><span class="o">]</span>dl<span class="p">|</span>-deflate<span class="p">|</span>-inflate<span class="o">))(</span>?<span class="o">=</span>.*<span class="o">([</span>_.<span class="w"> </span><span class="o">]</span>WEB<span class="o">[</span>_.<span class="w"> </span><span class="o">])(</span>?!DL<span class="o">)</span><span class="se">\b</span><span class="o">)</span><span class="p">|</span><span class="se">\b</span><span class="o">(</span>-CAKES<span class="p">|</span>-GGEZ<span class="p">|</span>-GGWP<span class="p">|</span>-GLHF<span class="p">|</span>-GOSSIP<span class="p">|</span>-NAISU<span class="p">|</span>-KOGI<span class="p">|</span>-PECULATE<span class="p">|</span>-SLOT<span class="p">|</span>-EDITH<span class="p">|</span>-ETHEL<span class="p">|</span>-ELEANOR<span class="p">|</span>-B2B<span class="p">|</span>-SPAMnEGGS<span class="p">|</span>-FTP<span class="p">|</span>-DiRT<span class="p">|</span>-SYNCOPY<span class="p">|</span>-BAE<span class="p">|</span>-SuccessfulCrab<span class="p">|</span>-NHTFS<span class="o">)</span>.*/i
+<div class="highlight"><pre><span></span><code>/^<span class="o">(</span>?!.*<span class="o">(</span>web<span class="o">[</span><span class="w"> </span><span class="o">]</span>dl<span class="p">|</span>-deflate<span class="p">|</span>-inflate<span class="o">))(</span>?<span class="o">=</span>.*<span class="o">(</span><span class="se">\b\d</span><span class="o">{</span><span class="m">3</span>,4<span class="o">}</span>p<span class="se">\b</span><span class="o">)</span>.*<span class="o">([</span>_.<span class="w"> </span><span class="o">]</span>WEB<span class="o">[</span>_.<span class="w"> </span><span class="o">])(</span>?!DL<span class="o">)</span><span class="se">\b</span><span class="o">)</span><span class="p">|</span><span class="se">\b</span><span class="o">(</span>-CAKES<span class="p">|</span>-GGEZ<span class="p">|</span>-GGWP<span class="p">|</span>-GLHF<span class="p">|</span>-GOSSIP<span class="p">|</span>-NAISU<span class="p">|</span>-KOGI<span class="p">|</span>-PECULATE<span class="p">|</span>-SLOT<span class="p">|</span>-EDITH<span class="p">|</span>-ETHEL<span class="p">|</span>-ELEANOR<span class="p">|</span>-B2B<span class="p">|</span>-SPAMnEGGS<span class="p">|</span>-FTP<span class="p">|</span>-DiRT<span class="p">|</span>-SYNCOPY<span class="p">|</span>-BAE<span class="p">|</span>-SuccessfulCrab<span class="p">|</span>-NHTFS<span class="p">|</span>-SURCODE<span class="p">|</span>-B0MBARDIERS<span class="o">)</span>.*/i
 </code></pre></div>
 <h4 id="optional-ignore-bad-dual-audio-groups">Optional - Ignore Bad Dual Audio Groups<a class="headerlink" href="#optional-ignore-bad-dual-audio-groups" title="Permanent link"></a></h4>
 <details class="question">
@@ -4270,16 +4501,33 @@ Also they often even rename the release name in to Portuguese.</p>
 </ol>
 </div>
 
-  <hr>
-<div class="md-source-file">
-  <small>
+
+
+
+
+
+
+  
     
-      Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 15, 2023 09:18:09</span>
+  
+  
+
+
+  <aside class="md-source-file">
+    
       
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 30, 2023 18:47:38</span>
+  </span>
+
     
-  </small>
-</div>
+    
+    
+    
+  </aside>
 
 
   
@@ -4299,6 +4547,7 @@ Also they often even rename the release name in to Portuguese.</p>
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
@@ -4337,7 +4586,7 @@ Also they often even rename the release name in to Portuguese.</p>
       
     
     <a href="https://trash-guides.info/discord" target="_blank" rel="noopener" title="trash-guides.info" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
     </a>
   
     
@@ -4348,7 +4597,7 @@ Also they often even rename the release name in to Portuguese.</p>
       
     
     <a href="https://github.com/TRaSH-Guides/Guides" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6.1-11.4.1-28.8.1-43.7 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 9 .1 21.7.1 30.6 0 4.8.1 8.6.1 10 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3-1.9.4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4 0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1-.9 1.1-2.8.9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9 1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1-.9.6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5-.9.9-2.4.4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6-.4.9-1.7 1.1-2.8.4z"/></svg>
     </a>
   
 </div>
@@ -4366,7 +4615,7 @@ Also they often even rename the release name in to Portuguese.</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
