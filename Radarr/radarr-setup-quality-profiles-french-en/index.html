@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../img/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
       
@@ -30,12 +30,18 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 8C119 8 8 119.1 8 256c0 137 111 248 248 248s248-111 248-248C504 119.1 393 8 256 8zm0 448c-110.5 0-200-89.4-200-200 0-110.5 89.5-200 200-200 110.5 0 200 89.5 200 200 0 110.5-89.4 200-200 200zm107.2-255.2c0 67.1-72.4 68.1-72.4 92.9V300c0 6.6-5.4 12-12 12h-45.6c-6.6 0-12-5.4-12-12v-8.7c0-35.7 27.1-50 47.6-61.5 17.6-9.8 28.3-16.5 28.3-29.6 0-17.2-22-28.7-39.8-28.7-23.2 0-33.9 11-48.9 30-4.1 5.1-11.5 6.1-16.7 2.1l-27.8-21.1c-5.1-3.9-6.3-11.1-2.6-16.4C184.8 131.5 214.9 112 261.8 112c49.1 0 101.5 38.3 101.5 88.8zM298 368c0 23.2-18.8 42-42 42s-42-18.8-42-42 18.8-42 42-42 42 18.8 42 42z"/></svg>');}</style>
 
 
     
@@ -197,7 +203,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -3540,7 +3546,7 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-    
+
                   
 
   
@@ -3623,13 +3629,17 @@ You could end up with a single audio release when a MULTi release exists. This i
 </div>
 <hr />
 <h2 id="examples-of-quality-profile">Examples of Quality Profile<a class="headerlink" href="#examples-of-quality-profile" title="Permanent link"></a></h2>
+<!-- markdownlint-disable MD041-->
 <div class="admonition warning">
 <p class="admonition-title">Attention</p>
 <p>All the used scores and combination of Custom Formats in this Guide are tested to get the desired results and prevent download loops as much as possible.</p>
 <p>From experience most of the time when people change scores or leave out certain CF that work together they end up with undesired results.</p>
 <p>If you're unsure or have questions do not hesitate to ask for help on Discord</p>
-<p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></p>
+<p><center><a class="md-button md-button--primary" href="https://trash-guides.info/discord"> Click For Support </a></center>
+<center><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></center></p>
 </div>
+<!-- markdownlint-enable MD041-->
+
 <hr />
 <h3 id="french-audio-versions">French Audio Versions<a class="headerlink" href="#french-audio-versions" title="Permanent link"></a></h3>
 <p>Those are all optional and only there to rename your release or to avoid a certain type of French Audio. Examples:</p>
@@ -3875,11 +3885,6 @@ This option should only be used for French indexers where you are sure that <cod
 <td style="text-align: center;">-10000</td>
 <td>f537cf427b64c38c8e36298f657e4828</td>
 </tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
-<td style="text-align: center;">-10000</td>
-<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
-</tr>
 </tbody>
 </table>
 <hr />
@@ -3892,15 +3897,6 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Obfuscated:</strong> [<em>Optional</em>] Use these only if you wish to avoid renamed releases.</li>
 <li><strong>Retags:</strong> [<em>Optional</em>] Use this if you want to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release.</li>
 <li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
-<li>
-<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
-<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
-<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
-<div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
-</div>
-</li>
 </ul>
 </details>
 <!-- END INCLUDE -->
@@ -3918,13 +3914,17 @@ Also they often even rename the release name into Portuguese.</li>
 </ul>
 <p>For this Quality Profile we're going to make use of the following Custom Formats with the scores given in the table.</p>
 <!-- BEGIN INCLUDE ../../includes/cf/score-attention.md -->
+<!-- markdownlint-disable MD041-->
 <div class="admonition warning">
 <p class="admonition-title">Attention</p>
 <p>All the used scores and combination of Custom Formats in this Guide are tested to get the desired results and prevent download loops as much as possible.</p>
 <p>From experience most of the time when people change scores or leave out certain CF that work together they end up with undesired results.</p>
 <p>If you're unsure or have questions do not hesitate to ask for help on Discord</p>
-<p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></p>
+<p><center><a class="md-button md-button--primary" href="https://trash-guides.info/discord"> Click For Support </a></center>
+<center><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></center></p>
 </div>
+<!-- markdownlint-enable MD041-->
+
 <!-- END INCLUDE -->
 
 <!-- END INCLUDE -->
@@ -4177,6 +4177,11 @@ The tag should look like the following: <code>{Movie CleanTitle:fr}</code>. This
 <td style="text-align: center;">6</td>
 <td>ae43b294509409a6a13919dedd4764c4</td>
 </tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#repack3">Repack3</a></td>
+<td style="text-align: center;">7</td>
+<td>5caaaa1c08c1742aa4342d8c4cc463f2</td>
+</tr>
 </tbody>
 </table>
 <details class="tip">
@@ -4291,11 +4296,6 @@ The tag should look like the following: <code>{Movie CleanTitle:fr}</code>. This
 <td style="text-align: center;">-10000</td>
 <td>f537cf427b64c38c8e36298f657e4828</td>
 </tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
-<td style="text-align: center;">-10000</td>
-<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
-</tr>
 </tbody>
 </table>
 <hr />
@@ -4308,15 +4308,6 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Obfuscated:</strong> [<em>Optional</em>] Use these only if you wish to avoid renamed releases.</li>
 <li><strong>Retags:</strong> [<em>Optional</em>] Use this if you want to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release.</li>
 <li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
-<li>
-<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
-<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
-<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
-<div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
-</div>
-</li>
 </ul>
 </details>
 <!-- END INCLUDE -->
@@ -4375,6 +4366,11 @@ Also they often even rename the release name into Portuguese.</li>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#hulu">Hulu</a></td>
 <td style="text-align: center;">0</td>
 <td>526d445d4c16214309f0fd2b3be18a89</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#it">iT</a></td>
+<td style="text-align: center;">0</td>
+<td>e0ec9672be6cac914ffad34a6b077209</td>
 </tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#max">MAX</a></td>
@@ -5058,6 +5054,11 @@ Also they often even rename the release name into Portuguese.</li>
 <td style="text-align: center;">6</td>
 <td>ae43b294509409a6a13919dedd4764c4</td>
 </tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#repack3">Repack3</a></td>
+<td style="text-align: center;">7</td>
+<td>5caaaa1c08c1742aa4342d8c4cc463f2</td>
+</tr>
 </tbody>
 </table>
 <details class="tip">
@@ -5176,11 +5177,6 @@ Also they often even rename the release name into Portuguese.</li>
 <td style="text-align: center;">-10000</td>
 <td>f537cf427b64c38c8e36298f657e4828</td>
 </tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
-<td style="text-align: center;">-10000</td>
-<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
-</tr>
 </tbody>
 </table>
 <hr />
@@ -5193,15 +5189,6 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Obfuscated:</strong> [<em>Optional</em>] Use these only if you wish to avoid renamed releases.</li>
 <li><strong>Retags:</strong> [<em>Optional</em>] Use this if you want to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release.</li>
 <li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
-<li>
-<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
-<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
-<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
-<div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
-</div>
-</li>
 </ul>
 </details>
 <!-- END INCLUDE -->
@@ -5260,6 +5247,11 @@ Also they often even rename the release name into Portuguese.</li>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#hulu">Hulu</a></td>
 <td style="text-align: center;">0</td>
 <td>526d445d4c16214309f0fd2b3be18a89</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#it">iT</a></td>
+<td style="text-align: center;">0</td>
+<td>e0ec9672be6cac914ffad34a6b077209</td>
 </tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#max">MAX</a></td>
@@ -5736,6 +5728,11 @@ Also they often even rename the release name into Portuguese.</li>
 <td style="text-align: center;">6</td>
 <td>ae43b294509409a6a13919dedd4764c4</td>
 </tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#repack3">Repack3</a></td>
+<td style="text-align: center;">7</td>
+<td>5caaaa1c08c1742aa4342d8c4cc463f2</td>
+</tr>
 </tbody>
 </table>
 <details class="tip">
@@ -5850,11 +5847,6 @@ Also they often even rename the release name into Portuguese.</li>
 <td style="text-align: center;">-10000</td>
 <td>f537cf427b64c38c8e36298f657e4828</td>
 </tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
-<td style="text-align: center;">-10000</td>
-<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
-</tr>
 </tbody>
 </table>
 <hr />
@@ -5867,15 +5859,6 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Obfuscated:</strong> [<em>Optional</em>] Use these only if you wish to avoid renamed releases.</li>
 <li><strong>Retags:</strong> [<em>Optional</em>] Use this if you want to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release.</li>
 <li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
-<li>
-<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
-<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
-<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
-<div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
-</div>
-</li>
 </ul>
 </details>
 <!-- END INCLUDE -->
@@ -5934,6 +5917,11 @@ Also they often even rename the release name into Portuguese.</li>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#hulu">Hulu</a></td>
 <td style="text-align: center;">0</td>
 <td>526d445d4c16214309f0fd2b3be18a89</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#it">iT</a></td>
+<td style="text-align: center;">0</td>
+<td>e0ec9672be6cac914ffad34a6b077209</td>
 </tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#max">MAX</a></td>
@@ -6616,6 +6604,11 @@ Also they often even rename the release name into Portuguese.</li>
 <td style="text-align: center;">6</td>
 <td>ae43b294509409a6a13919dedd4764c4</td>
 </tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#repack3">Repack3</a></td>
+<td style="text-align: center;">7</td>
+<td>5caaaa1c08c1742aa4342d8c4cc463f2</td>
+</tr>
 </tbody>
 </table>
 <details class="tip">
@@ -6734,11 +6727,6 @@ Also they often even rename the release name into Portuguese.</li>
 <td style="text-align: center;">-10000</td>
 <td>f537cf427b64c38c8e36298f657e4828</td>
 </tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
-<td style="text-align: center;">-10000</td>
-<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
-</tr>
 </tbody>
 </table>
 <hr />
@@ -6751,15 +6739,6 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Obfuscated:</strong> [<em>Optional</em>] Use these only if you wish to avoid renamed releases.</li>
 <li><strong>Retags:</strong> [<em>Optional</em>] Use this if you want to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release.</li>
 <li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
-<li>
-<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
-<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
-<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
-<div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
-</div>
-</li>
 </ul>
 </details>
 <!-- END INCLUDE -->
@@ -6818,6 +6797,11 @@ Also they often even rename the release name into Portuguese.</li>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#hulu">Hulu</a></td>
 <td style="text-align: center;">0</td>
 <td>526d445d4c16214309f0fd2b3be18a89</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#it">iT</a></td>
+<td style="text-align: center;">0</td>
+<td>e0ec9672be6cac914ffad34a6b077209</td>
 </tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#max">MAX</a></td>
@@ -6903,12 +6887,15 @@ Also they often even rename the release name into Portuguese.</li>
 <li>A special one to Piou and Wikoul who are potentially both now in asylums due to the amount of testing.</li>
 <li><a href="https://trash-guides.info/">TRaSH</a>, for granting me a small space on his guide for this, his knowledge, and his friendliness.</li>
 </ul>
+<!-- markdownlint-disable MD041-->
 <hr />
 <div class="admonition question">
 <p class="admonition-title">Questions or Suggestions?</p>
-<p>If you have questions or suggestions click the chat badge to join the Discord Support Channel where you can ask your questions directly and get live support.</p>
-<p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></p>
+<p><center>If you have questions or suggestions, click the button below to join our Discord server.</center></p>
+<p><center><a class="md-button md-button--primary" href="https://trash-guides.info/discord"> Click For Support </a></center>
+<center><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></center></p>
 </div>
+<!-- markdownlint-enable MD041-->
 
 
 
@@ -6931,7 +6918,7 @@ Also they often even rename the release name into Portuguese.</li>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 19, 2023 14:35:05</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 11, 2024 21:04:29</span>
   </span>
 
     
@@ -6956,12 +6943,18 @@ Also they often even rename the release name into Portuguese.</li>
 
 
                 
-    <footer class="sponsorship">
-        <hr>
-        <a href="https://github.com/sponsors/TRaSH-" title="Buy me a Coffee"><img src="/img/buy-me-a-coffee.png" alt="Buy me a coffee" width="137" height="39">
-        </a>
-        <hr>
-    </footer>
+<footer class="sponsorship">
+  <hr />
+  <a href="https://github.com/sponsors/TRaSH-" title="Buy me a Coffee"
+    ><img
+      src="/img/buy-me-a-coffee.png"
+      alt="Buy me a coffee"
+      width="137"
+      height="39"
+    />
+  </a>
+  <hr />
+</footer>
 
               </article>
             </div>
@@ -6985,7 +6978,7 @@ Also they often even rename the release name into Portuguese.</li>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2022 TRaSH
+      Copyright &copy; 2024 TRaSH
     </div>
   
   
@@ -7032,11 +7025,13 @@ Also they often even rename the release name into Portuguese.</li>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view", "content.tooltips"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
     
-  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
